@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Web Development Quiz</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="hard.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="navbar-logo">
+            <div class="navbar-book-logo">📚</div>
+            <a href="quizwebs(index).html"  style="text-decoration: none; color: white; font-family: 'Arial Black', Gadget, sans-serif; font-size: 40pt;" >Qodex</a>
+        </div>
+        <nav>
+            <ul class="navbar-nav">
+                <li><a href="home.html" class="navbar-link" >Home</a></li>
+                <li><a href="quiz.html" class="navbar-link" >Quiz</a></li>
+                <li><a href="About.html" class="navbar-link" >About Us</a></li>
+                <li class="navbar-buttons">
+                    <div id="signup-btn"><button class="navbar-btn">Sign Up</button></div>
+                    <div id="login-btn"><button class="navbar-btn">Log In</button></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quiz-container">
+        <a href="quiz.html" class="quiz-back">Back to Difficulty Selection</a>
+        <h1 class="quiz-title">Hard Web Development Quiz</h1>
+        
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">1. What's the difference between == and === in JavaScript?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q1-a" name="hard-q1" value="a">
+                        <label for="hard-q1-a">== compares value, === compares value and type</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q1-b" name="hard-q1" value="b">
+                        <label for="hard-q1-b">=== is faster</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q1-c" name="hard-q1" value="c">
+                        <label for="hard-q1-c">No difference</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 2 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">2. What is the CSS BEM methodology?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q2-a" name="hard-q2" value="a">
+                        <label for="hard-q2-a">A naming convention (Block, Element, Modifier)</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q2-b" name="hard-q2" value="b">
+                        <label for="hard-q2-b">A JavaScript framework</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q2-c" name="hard-q2" value="c">
+                        <label for="hard-q2-c">A HTML templating engine</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 3 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">3. What is the purpose of the HTML &lt;picture&gt; element?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q3-a" name="hard-q3" value="a">
+                        <label for="hard-q3-a">To provide multiple sources for an image based on different conditions</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q3-b" name="hard-q3" value="b">
+                        <label for="hard-q3-b">To create a slideshow of images</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q3-c" name="hard-q3" value="c">
+                        <label for="hard-q3-c">To embed an image with a caption</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 4 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">4. What is a closure in JavaScript?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q4-a" name="hard-q4" value="a">
+                        <label for="hard-q4-a">A function with access to its own scope, the outer function's variables, and global variables</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q4-b" name="hard-q4" value="b">
+                        <label for="hard-q4-b">A way to close or terminate a function</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q4-c" name="hard-q4" value="c">
+                        <label for="hard-q4-c">A method to encapsulate private variables</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 5 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">5. What does the CSS "will-change" property do?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q5-a" name="hard-q5" value="a">
+                        <label for="hard-q5-a">Hints to browsers how an element is expected to change for optimization</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q5-b" name="hard-q5" value="b">
+                        <label for="hard-q5-b">Forces the browser to re-render the element</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q5-c" name="hard-q5" value="c">
+                        <label for="hard-q5-c">Triggers a CSS animation</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 6 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">6. What is the Shadow DOM?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q6-a" name="hard-q6" value="a">
+                        <label for="hard-q6-a">A way to encapsulate styles and markup in web components</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q6-b" name="hard-q6" value="b">
+                        <label for="hard-q6-b">A method to create drop shadows on elements</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q6-c" name="hard-q6" value="c">
+                        <label for="hard-q6-c">A technique for dark mode implementation</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 7 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">7. What is the purpose of the JavaScript Event Loop?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q7-a" name="hard-q7" value="a">
+                        <label for="hard-q7-a">To handle asynchronous operations in a single-threaded environment</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q7-b" name="hard-q7" value="b">
+                        <label for="hard-q7-b">To create infinite loops in code</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q7-c" name="hard-q7" value="c">
+                        <label for="hard-q7-c">To handle event listeners for DOM elements</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 8 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">8. What is the CSS "contain" property used for?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q8-a" name="hard-q8" value="a">
+                        <label for="hard-q8-a">To indicate that an element and its contents are independent from the rest of the document tree</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q8-b" name="hard-q8" value="b">
+                        <label for="hard-q8-b">To prevent content from overflowing its container</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q8-c" name="hard-q8" value="c">
+                        <label for="hard-q8-c">To create a scrollable container</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 9 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">9. What is the difference between "let", "const", and "var" in JavaScript?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q9-a" name="hard-q9" value="a">
+                        <label for="hard-q9-a">let and const are block-scoped, var is function-scoped; const can't be reassigned</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q9-b" name="hard-q9" value="b">
+                        <label for="hard-q9-b">They are all the same but with different syntax</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q9-c" name="hard-q9" value="c">
+                        <label for="hard-q9-c">let is for numbers, const for strings, var for objects</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Question 10 -->
+            <div class="quiz-question">
+                <p class="quiz-question-text">10. What is the purpose of the HTML &lt;slot&gt; element in Web Components?</p>
+                <div class="quiz-options">
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q10-a" name="hard-q10" value="a">
+                        <label for="hard-q10-a">To create placeholders for user-provided content</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q10-b" name="hard-q10" value="b">
+                        <label for="hard-q10-b">To define animation sequences</label>
+                    </div>
+                    <div class="quiz-option">
+                        <input type="radio" id="hard-q10-c" name="hard-q10" value="c">
+                        <label for="hard-q10-c">To create hidden sections of content</label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="quiz-submit">Submit Quiz</button>
+        </form>
+    </div>
+    
+
+    <script src="js/modals.js"></script>
+</body>
+</html>

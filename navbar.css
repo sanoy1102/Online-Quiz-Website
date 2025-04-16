@@ -1,0 +1,265 @@
+/* NAVBAR STYLES ONLY */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 40px;
+   background-color: #4f56a1;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+
+.navbar-logo {
+   display: flex;
+   align-items: center;
+   font-size: 1.8rem;
+   font-weight: 700;
+   color: white;
+}
+
+.navbar-book-logo {
+   font-size: 2.5rem;
+   margin-right: 15px;
+   animation: jump 1s ease-in-out infinite;
+}
+
+@keyframes jump {
+   0% { transform: translateY(0); }
+   50% { transform: translateY(-10px); }
+   100% { transform: translateY(0); }
+}
+
+.navbar-nav {
+   display: flex;
+   list-style: none;
+   gap: 20px;
+}
+
+.navbar-link {
+   text-decoration: none;
+   color: white;
+   font-size: 1.1rem;
+   font-weight: 500;
+   padding: 8px 16px;
+   transition: all 0.3s ease;
+   font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+.navbar-link:hover {
+   background-color: #f5a623;
+   border-radius: 5px;
+}
+
+.navbar-buttons {
+   display: flex;
+   gap: 10px;
+   margin-left: 20px;
+}
+
+.navbar-btn {
+   background-color: #f5a623;
+   color: white;
+   border: none;
+   padding: 8px 16px;
+   border-radius: 5px;
+   font-size: 1rem;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.navbar-btn:hover {
+   background-color: #d38f1b;
+   transform: translateY(-2px);
+}
+
+
+/* MODAL */
+/* MODAL SIGN IN & SIGN UP */
+/* ===== NAVIGATION BUTTONS ===== */
+.insideContainer2 {
+   display: flex;
+   gap: 10px;
+   margin-left: 20px;
+ }
+ 
+ .nav-btn {
+   background-color: #f5a623;
+   color: white;
+   border: none;
+   padding: 8px 16px;
+   border-radius: 5px;
+   font-size: 1rem;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+ 
+ .nav-btn:hover {
+   background-color: #d38f1b;
+   transform: translateY(-2px);
+ }
+ 
+ /* ===== MODAL STYLES ===== */
+ .modal {
+   display: none;
+   position: fixed;
+   z-index: 1001;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.5);
+   backdrop-filter: blur(5px);
+   animation: fadeIn 0.3s ease-out;
+ }
+ 
+ .modal-content {
+   background-color: white;
+   margin: 5% auto;
+   padding: 0;
+   border-radius: 12px;
+   width: 100%;
+   max-width: 800px;
+   display: flex;
+   overflow: hidden;
+   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+   animation: slideDown 0.3s ease-out;
+ }
+ 
+ .left {
+   padding: 40px;
+   width: 60%;
+ }
+ 
+ .right {
+   width: 40%;
+   background: linear-gradient(135deg, #4f56a1, #6a3d84);
+   position: relative;
+ }
+ 
+ .close-btn {
+   position: absolute;
+   top: 20px;
+   right: 20px;
+   font-size: 28px;
+   font-weight: bold;
+   color: white;
+   cursor: pointer;
+   transition: color 0.3s;
+ }
+ 
+ .close-btn:hover {
+   color: #f5a623;
+ }
+ 
+ .modal h3 {
+   color: #4f56a1;
+   font-size: 1.8rem;
+   margin-bottom: 10px;
+ }
+ 
+ .modal p {
+   color: #666;
+   margin-bottom: 30px;
+ }
+ 
+ .form-box {
+   margin-top: 20px;
+ }
+ 
+ .form-box label {
+   display: block;
+   margin-bottom: 8px;
+   color: #4f56a1;
+   font-weight: 500;
+ }
+ 
+ .form-box input {
+   width: 100%;
+   padding: 12px 15px;
+   margin-bottom: 20px;
+   border: 2px solid #e1e5eb;
+   border-radius: 8px;
+   font-size: 1rem;
+   transition: all 0.3s;
+ }
+ 
+ .form-box input:focus {
+   border-color: #4f56a1;
+   outline: none;
+   box-shadow: 0 0 0 3px rgba(79, 86, 161, 0.2);
+ }
+ 
+ .submit-btn {
+   width: 100%;
+   background-color: #f5a623;
+   color: white;
+   border: none;
+   padding: 14px;
+   border-radius: 8px;
+   font-size: 1.1rem;
+   font-weight: 600;
+   cursor: pointer;
+   transition: all 0.3s;
+   margin-top: 10px;
+ }
+ 
+ .submit-btn:hover {
+   background-color: #d38f1b;
+   transform: translateY(-2px);
+ }
+ 
+ .forgot-password {
+   display: block;
+   text-align: right;
+   margin-top: -15px;
+   margin-bottom: 20px;
+   color: #4f56a1;
+   text-decoration: none;
+   font-size: 0.9rem;
+ }
+ 
+ .forgot-password:hover {
+   text-decoration: underline;
+ }
+ 
+ /* Animations */
+ @keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+ }
+ 
+ @keyframes slideDown {
+   from { 
+     transform: translateY(-50px);
+     opacity: 0;
+   }
+   to { 
+     transform: translateY(0);
+     opacity: 1;
+   }
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+   .modal-content {
+     flex-direction: column;
+     max-width: 90%;
+   }
+   
+   .left, .right {
+     width: 100%;
+   }
+   
+   .right {
+     height: 100px;
+   }
+   
+   .insideContainer2 {
+     margin-left: 0;
+     margin-top: 10px;
+     justify-content: center;
+   }
+ } 
